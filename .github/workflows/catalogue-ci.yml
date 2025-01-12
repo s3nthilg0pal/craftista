@@ -22,6 +22,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
       - name: Test with pytest
+        working-directory: ./catalogue
         run: |
             pip install pytest pytest-cov
             pytest test_app.py --doctest-modules --junitxml=junit/test-results.xml --cov=com --cov-report=xml --cov-report=html
