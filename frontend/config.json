@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",	
-  "productsApiBaseUri": "http://catalogue:5000",
-  "recommendationBaseUri": "http://recco:8080",
-  "votingBaseUri": "http://voting:8080"
+  "productsApiBaseUri": "http://192.168.0.160:5000",
+  "recommendationBaseUri": "http://192.168.0.160:8089",
+  "votingBaseUri": "http://192.168.0.160:8085"
 }
 

@@ -3,11 +3,12 @@ const axios = require('axios');
 const router = express.Router();
 
 // Voting Service base URL
-const VOTING_SERVICE_BASE_URL = 'http://voting:8080';
+const VOTING_SERVICE_BASE_URL = 'http://192.168.0.160:8085';
 
 // Vote for an Origami
 router.post('/:origamiId/vote', async (req, res, next) => {
     try {
+        console.log(VOTING_SERVICE_BASE_URL);
         await axios.post(`${VOTING_SERVICE_BASE_URL}/api/origamis/${req.params.origamiId}/vote`);
         res.status(200).send('Vote recorded!');
     } catch (error) {

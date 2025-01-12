@@ -21,6 +21,7 @@ app.use('/static', express.static('public'));
 // Endpoint to serve product data to client
 app.get('/api/products', async (req, res) => {
   try {
+    console.warn(productsApiBaseUri);
     let response = await axios.get(`${productsApiBaseUri}/api/products`);
     res.json(response.data);
   } catch (error) {

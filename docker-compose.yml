@@ -1,0 +1,34 @@
+services:
+  recommendation:
+    restart: on-failure
+    build:
+      context: .\recommendation
+      dockerfile: Dockerfile
+    ports:
+      - "8089:8080"
+  voting:
+    restart: on-failure
+    build:
+      context: .\voting
+    ports:
+      - 8085:8080
+  catalogue:
+    restart: on-failure
+    build:
+      context: .\catalogue
+    ports:
+      - 5000:5000
+  frontent:
+    restart: on-failure
+    build:
+      context: .\frontend
+    environment:
+      NODE_ENV: production
+    ports:
+      - 8084:3000
+    depends_on:
+    - recommendation
+    - voting
+    - catalogue
+
+
