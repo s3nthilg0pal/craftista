@@ -163,8 +163,8 @@ Craftista serves as a perfect sandbox for developers and DevOps practitioners. T
 ## 15 Project Ides to build using this Application Repo 
 
 Here are 10 basic projects you could build with it that would make you a Real Devops Engineer
-  1.  Containerize with Docker: Write Dockerfiles for each of the services, and a docker compose to run it as a micro services application stack to automate dev environments.  
-  2.  Build CI Pipeline : Build a complete CI Pipeline using Jenkins, GitHub Actions, Azure Devops etc.  
+  ~~1.  Containerize with Docker: Write Dockerfiles for each of the services, and a docker compose to run it as a micro services application stack to automate dev environments.~~  
+  ~~2.  Build CI Pipeline : Build a complete CI Pipeline using Jenkins, GitHub Actions, Azure Devops etc.~~  
   3.  Deploy to Kubernetes : Write kubernetes manifests to create Deployments, Services, PVCs, ConfigMaps, Statefulsets and more  
   4.  Package with Helm : Write helm charts to templatize the kubernetes manifests and prepare to deploy in different environments  
   5.  Blue/Green and Canary Releases with ArgoCD/GitOps: Setup releases strategies with Argo Rollouts Combined with ArgoCD and integrate with CI Pipeline created in 3. to setup a complete CI/CD workflow.  
